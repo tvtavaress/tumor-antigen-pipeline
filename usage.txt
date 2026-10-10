@@ -1,0 +1,3 @@
+nextflow run main.nf \
+    --input /caminho/para/seu_arquivo.h5ad \
+    --outdir results
