@@ -79,5 +79,7 @@ This project is under active development. Modules, parameters, dependencies, and
 ---
 
 Research project in bioinformatics, single-cell transcriptomics, and cancer immunotherapy.
-Laboratory of Bioinformatics, Artificial Intelligence, and Technological Innovation (LABIIT)
+
+Laboratory of Bioinformatics, Artificial Intelligence, and Technological Innovation (LABIIT).
+
 FEDERAL UNIVERSITY OF RIO GRANDE DO NORTE
