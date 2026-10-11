@@ -2,3 +2,4 @@ assets/test_input.h5ad
 .nextflow/
 work/
 results/
+scripts/__pycache__/

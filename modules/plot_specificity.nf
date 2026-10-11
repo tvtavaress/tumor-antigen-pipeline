@@ -1,9 +1,9 @@
-process SPECIFICITY_PLOTS {
+process PLOT_SPECIFICITY {
     tag { specificity_csv.baseName }
 
     conda "${projectDir}/envs/specificity_plots.yml"
 
-    publishDir "${params.outdir}/specificity_plots", mode: 'copy'
+    publishDir "${params.outdir}/specificity", mode: 'copy'
 
     input:
     path specificity_csv
@@ -13,7 +13,7 @@ process SPECIFICITY_PLOTS {
 
     script:
     """
-    Rscript "${projectDir}/scripts/specificity_plots.R" \
+    Rscript "${projectDir}/scripts/plot_specificity.R" \
         --input "${specificity_csv}" \
         --output specificity_groups_heatmap.svg
     """
