@@ -1,3 +1,5 @@
 nextflow run main.nf \
-    --input /caminho/para/seu_arquivo.h5ad \
-    --outdir results
+    --input assets/test_input.h5ad \
+    --specificity hpa \
+    --pan_cancer \
+    --gene_name_mapping assets/gene_names.json
