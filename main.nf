@@ -6,6 +6,7 @@ include { SPECIFICITY } from './modules/specificity'
 include { PLOT_SPECIFICITY } from './modules/plot_specificity'
 include { SET_ANTIGENS_TYPE } from './modules/set_antigens_type'
 include { PLOT_ANTIGENS_TYPE } from './modules/plot_antigens_type'
+include { NON_MALIGNANTS_HEALTHY_TISSUES } from './modules/non_malignants_healthy_tissues'
 
 
 workflow {
@@ -34,6 +35,9 @@ workflow {
     )
 
     PLOT_ANTIGENS_TYPE(
+        SET_ANTIGENS_TYPE.out.classified_labeled
+    )
+    NON_MALIGNANTS_HEALTHY_TISSUES(
         SET_ANTIGENS_TYPE.out.classified_labeled
     )
 }

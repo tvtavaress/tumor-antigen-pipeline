@@ -1,7 +1,7 @@
 process PLOT_SPECIFICITY {
     tag { specificity_csv.baseName }
 
-    conda "${projectDir}/envs/specificity_plots.yml"
+    conda "${projectDir}/envs/analysis.yml"
 
     publishDir "${params.outdir}/specificity", mode: 'copy'
 
