@@ -1,9 +1,12 @@
 channels:
   - conda-forge
   - bioconda
+
 dependencies:
   - r-base=4.4
   - r-tidyverse
   - r-optparse
   - bioconductor-complexheatmap
   - r-circlize
+  - python=3.13
+  - pandas
